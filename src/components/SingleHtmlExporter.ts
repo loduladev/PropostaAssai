@@ -262,7 +262,7 @@ export function generateSingleHtmlPresentation(): string {
                 </div>
                 <div class="text-2xl font-black text-white mt-1">45.800 <span class="text-xs font-normal text-slate-400">views/méd</span></div>
                 <p class="text-[11px] text-slate-300 mt-2 leading-relaxed">
-                  Reels de humor com o Ruka alcançam picos de até <strong class="text-rose-400">485.000 visualizações</strong>, expandindo a base de seguidores orgânicos a custo zero.
+                  Reels de humor com a Ruka alcançam picos de até <strong class="text-rose-400">485.000 visualizações</strong>, expandindo a base de seguidores orgânicos a custo zero.
                 </p>
               </div>
 

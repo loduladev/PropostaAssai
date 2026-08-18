@@ -125,11 +125,11 @@ export const CONTENT_PILLARS: ContentPillar[] = [
   {
     id: 'humor-ruka',
     title: 'Esquetes de Humor com Ruka',
-    description: 'Vídeos cômicos de situações do dia a dia no bar, diálogos espontâneos e dinâmicas divertidas com o funcionário Ruka.',
+    description: 'Vídeos cômicos de situações do dia a dia no bar, diálogos espontâneos e dinâmicas divertidas com a funcionária Ruka.',
     sharePercentage: 45,
     avgEngagement: 6.85,
     avgViews: 82500,
-    topExample: '“Quando o cliente pede cerveja quente vs o Ruka atendendo” (480K views)',
+    topExample: '“Quando o cliente pede cerveja quente vs a Ruka atendendo” (480K views)',
     iconName: 'Laugh',
     badgeColor: 'amber',
   },
@@ -181,7 +181,7 @@ export const TOP_POSTS_DATA: TopPost[] = [
     saves: 3100,
     engagement: 8.9,
     reach: 412000,
-    description: 'Vídeo viral em conjunto com o Ruka que gerou alto volume de compartilhamentos no WhatsApp e Direct.',
+    description: 'Vídeo viral em conjunto com a Ruka que gerou alto volume de compartilhamentos no WhatsApp e Direct.',
   },
   {
     id: 'post-2',

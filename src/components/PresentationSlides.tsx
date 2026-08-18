@@ -302,7 +302,7 @@ export function PresentationSlides({ onGoToDashboard, onGoToMediaKit }: Presenta
                     </div>
                     <div className="text-2xl font-black text-emerald-400 mt-1">74.2%</div>
                     <p className="text-xs text-slate-300 mt-2 leading-relaxed">
-                      A maioria do público impactado vem da aba Explorar e Reels, impulsionada pelas esquetes cômicas com o Ruka.
+                      A maioria do público impactado vem da aba Explorar e Reels, impulsionada pelas esquetes cômicas com a Ruka.
                     </p>
                   </div>
 
@@ -483,7 +483,7 @@ export function PresentationSlides({ onGoToDashboard, onGoToMediaKit }: Presenta
                   </div>
                   <h3 className="font-bold text-white text-base">Formatos de Alta Conversão</h3>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    Integração nativa de marcas em <strong className="text-emerald-300">esquetes cômicas com o Ruka</strong> (Reels) e sequências de stories matinais/noturnos com link e cupom.
+                    Integração nativa de marcas em <strong className="text-emerald-300">esquetes cômicas com a Ruka</strong> (Reels) e sequências de stories matinais/noturnos com link e cupom.
                   </p>
                 </div>
               </div>
@@ -520,7 +520,7 @@ export function PresentationSlides({ onGoToDashboard, onGoToMediaKit }: Presenta
 
                     {/* Main Title */}
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-                      Proposta: João Córdoba • 329 Mil Seguidores
+                      Proposta: João Córdoba • 330 Mil Seguidores
                     </h2>
 
                     {/* Subtitle / Contract Scope */}
@@ -553,7 +553,7 @@ export function PresentationSlides({ onGoToDashboard, onGoToMediaKit }: Presenta
                     Pacote Recomendado (Equilíbrio de Mercado)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Valor calibrado no ponto de equilíbrio do mercado para 329 mil seguidores com desconto de ~40% sobre a tabela avulsa.
+                    Valor calibrado no ponto de equilíbrio do mercado para 330 mil seguidores com desconto de ~40% sobre a tabela avulsa.
                   </p>
                 </div>
 
@@ -747,7 +747,7 @@ export function PresentationSlides({ onGoToDashboard, onGoToMediaKit }: Presenta
                 </div>
 
                 <div className="self-stretch sm:self-auto flex items-center justify-center px-4 py-2 bg-slate-950 text-slate-200 border border-slate-700 rounded-xl text-xs font-semibold whitespace-nowrap shadow-sm">
-                  Excelente ROI para 329k de Audiência
+                  Excelente ROI para 330K de Audiência
                 </div>
               </div>
             </motion.div>
