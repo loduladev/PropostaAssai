@@ -22,7 +22,8 @@ import {
   Percent,
   BadgePercent,
   Calculator,
-  FileText
+  FileText,
+  FileDown
 } from 'lucide-react';
 import {
   BarChart,
@@ -43,9 +44,14 @@ import { JP_PROFILE_SUMMARY, MONTHLY_METRICS_DATA, CONTENT_PILLARS, TOP_POSTS_DA
 interface PresentationSlidesProps {
   onGoToDashboard: () => void;
   onGoToMediaKit: () => void;
+  onDownloadPdf?: () => void;
 }
 
-export function PresentationSlides({ onGoToDashboard, onGoToMediaKit }: PresentationSlidesProps) {
+export function PresentationSlides({
+  onGoToDashboard,
+  onGoToMediaKit,
+  onDownloadPdf,
+}: PresentationSlidesProps) {
   const [currentSlide, setCurrentSlide] = useState(1);
   const totalSlides = 5;
   const profile = JP_PROFILE_SUMMARY;
@@ -463,7 +469,7 @@ export function PresentationSlides({ onGoToDashboard, onGoToMediaKit }: Presenta
                   </div>
                   <h3 className="font-bold text-white text-base">Autoridade no Vale do Paraíba</h3>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    Com mais de <strong className="text-white">68 mil seguidores fiéis</strong> e quase metade em São José dos Campos, @jpbcordoba é referência direta para decisões de consumo e entretenimento na região.
+                    Com mais de <strong className="text-white">330 mil seguidores fiéis</strong> e quase metade em São José dos Campos, @jpbcordoba é referência direta para decisões de consumo e entretenimento na região.
                   </p>
                 </div>
 
@@ -747,7 +753,7 @@ export function PresentationSlides({ onGoToDashboard, onGoToMediaKit }: Presenta
                 </div>
 
                 <div className="self-stretch sm:self-auto flex items-center justify-center px-4 py-2 bg-slate-950 text-slate-200 border border-slate-700 rounded-xl text-xs font-semibold whitespace-nowrap shadow-sm">
-                  Excelente ROI para 330K de Audiência
+                  Excelente ROI para 330k de Audiência
                 </div>
               </div>
             </motion.div>
@@ -801,8 +807,21 @@ export function PresentationSlides({ onGoToDashboard, onGoToMediaKit }: Presenta
           ))}
         </div>
 
-        <div className="text-xs text-slate-400 font-medium">
-          Slide <span className="text-white font-bold">{currentSlide}</span> de <span className="text-slate-300">{totalSlides}</span>
+        <div className="flex items-center gap-3">
+          {onDownloadPdf && (
+            <button
+              onClick={onDownloadPdf}
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-slate-900 hover:bg-slate-800 text-amber-400 border border-amber-500/30 rounded-lg text-xs font-semibold transition cursor-pointer"
+              title="Baixar versão PDF estilo apresentação dos slides"
+            >
+              <FileDown className="w-3.5 h-3.5" />
+              <span>Baixar PDF</span>
+            </button>
+          )}
+
+          <div className="text-xs text-slate-400 font-medium">
+            Slide <span className="text-white font-bold">{currentSlide}</span> de <span className="text-slate-300">{totalSlides}</span>
+          </div>
         </div>
       </div>
     </div>

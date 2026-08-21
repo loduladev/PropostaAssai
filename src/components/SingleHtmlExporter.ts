@@ -55,7 +55,7 @@ export function generateSingleHtmlPresentation(): string {
           <span class="font-bold text-slate-100 text-sm">@${profile.username}</span>
           <span class="bg-amber-500/20 text-amber-300 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-amber-500/30">Relatório Oficial</span>
         </div>
-        <p class="text-[11px] text-slate-400 font-medium">Criador de conteúdo</p>
+        <p class="text-[11px] text-slate-400 font-medium">Criador de conteúdo • 330.000 seguidores</p>
       </div>
     </div>
 
@@ -67,8 +67,8 @@ export function generateSingleHtmlPresentation(): string {
         </button>
       </div>
 
-      <button onclick="window.print()" title="Imprimir / Salvar PDF" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-lg text-xs font-medium transition">
-        <span>📄 Imprimir / PDF</span>
+      <button onclick="window.print()" title="Baixar / Salvar PDF" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-amber-500 to-rose-500 text-slate-950 font-bold rounded-lg text-xs transition shadow-sm">
+        <span>📄 Baixar PDF / Imprimir</span>
       </button>
 
       <button onclick="toggleFullscreen()" class="p-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-lg text-xs transition" title="Tela Cheia">
@@ -87,38 +87,42 @@ export function generateSingleHtmlPresentation(): string {
       <div class="slide active flex-col justify-center min-h-[75vh]" id="slide-1">
         <div class="grid lg:grid-cols-12 gap-8 items-center">
           <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide">
-              <span>📊 APRESENTAÇÃO EXECUTIVA & PROPOSTA COMERCIAL</span>
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-amber-500/30 text-amber-400 text-xs font-bold tracking-wider uppercase shadow-sm">
+              <span>✨ APRESENTAÇÃO EXECUTIVA & PROPOSTA COMERCIAL</span>
             </div>
             
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-display">
-              Desempenho & Métricas <br>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight font-display">
+              Análise Estratégica <br>
               <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-rose-400 to-amber-200">
                 @${profile.username}
               </span>
             </h1>
 
             <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
-              Relatório analítico consolidado de <strong class="text-white">impressões, alcance, engajamento e visualizações comparativas</strong> (Feed vs Stories) de <strong class="text-amber-400">${profile.name}</strong>, empresário à frente do icônico Bar do Coronel e criador de conteúdo.
+              Diagnóstico aprofundado de <strong class="text-white">impressões, alcance, interações e taxas de engajamento</strong>, com foco no comparativo mensal de <strong class="text-amber-400">visualizações de Feed vs. Stories</strong> do perfil de <strong class="text-white">${profile.name}</strong>.
             </p>
 
             <!-- Quick Highlight Pills -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-              <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl">
+              <div class="bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl">
                 <span class="text-[11px] text-slate-400 block font-medium">Seguidores</span>
-                <span class="text-xl font-extrabold text-white">${profile.followers.toLocaleString('pt-BR')}</span>
+                <span class="text-xl font-black text-white">${profile.followers.toLocaleString('pt-BR')}</span>
+                <span class="text-[10px] text-emerald-400 font-semibold block mt-0.5">↑ +14.2% ao semestre</span>
               </div>
-              <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl">
-                <span class="text-[11px] text-slate-400 block font-medium">Alcance Mensal Médio</span>
-                <span class="text-xl font-extrabold text-amber-400">1.1M+</span>
+              <div class="bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl">
+                <span class="text-[11px] text-slate-400 block font-medium">Alcance Médio</span>
+                <span class="text-xl font-black text-rose-400">1.1M+</span>
+                <span class="text-[10px] text-slate-400 block mt-0.5">contas únicas/mês</span>
               </div>
-              <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl">
-                <span class="text-[11px] text-slate-400 block font-medium">Engajamento Médio</span>
-                <span class="text-xl font-extrabold text-emerald-400">4.85%</span>
+              <div class="bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl">
+                <span class="text-[11px] text-slate-400 block font-medium">Engajamento</span>
+                <span class="text-xl font-black text-emerald-400">${profile.averageEngagementRate}%</span>
+                <span class="text-[10px] text-slate-400 block mt-0.5">2.3x acima do mercado</span>
               </div>
-              <div class="bg-slate-900/80 border border-slate-800 p-3.5 rounded-xl">
-                <span class="text-[11px] text-slate-400 block font-medium">Média Feed (Reels)</span>
-                <span class="text-xl font-extrabold text-rose-400">45.8K</span>
+              <div class="bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl">
+                <span class="text-[11px] text-slate-400 block font-medium">Média Stories</span>
+                <span class="text-xl font-black text-amber-400">9.2K</span>
+                <span class="text-[10px] text-slate-400 block mt-0.5">13.4% retenção diária</span>
               </div>
             </div>
 
@@ -134,40 +138,43 @@ export function generateSingleHtmlPresentation(): string {
 
           <!-- Profile Card Visual -->
           <div class="lg:col-span-5">
-            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-6 rounded-2xl shadow-2xl relative overflow-hidden">
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-6 rounded-2xl shadow-2xl relative overflow-hidden space-y-4">
               <div class="absolute -right-16 -top-16 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
               
-              <div class="flex items-center gap-4 mb-5">
+              <div class="flex items-center gap-4">
                 <div class="w-16 h-16 rounded-full flex-shrink-0 bg-amber-500/20 border-2 border-amber-500/40 shadow-lg flex items-center justify-center text-amber-400 font-black text-3xl select-none">
                   J
                 </div>
                 <div>
-                  <h3 class="text-lg font-bold text-white">${profile.name}</h3>
-                  <p class="text-xs text-amber-400 font-medium">@${profile.username}</p>
+                  <div class="flex items-center gap-2">
+                    <h3 class="text-lg font-bold text-white">${profile.name}</h3>
+                    <span class="bg-amber-500/20 text-amber-300 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-amber-500/30">Oficial</span>
+                  </div>
+                  <p class="text-xs text-amber-400 font-semibold">@${profile.username}</p>
                   <p class="text-[11px] text-slate-400">${profile.location}</p>
                 </div>
               </div>
 
-              <div class="bg-slate-950/70 border border-slate-800/80 rounded-xl p-4 mb-4 text-xs text-slate-300 leading-relaxed">
+              <div class="bg-slate-950/70 border border-slate-800/80 rounded-xl p-4 text-xs text-slate-300 leading-relaxed italic">
                 "${profile.bio}"
               </div>
 
               <div class="space-y-2.5 text-xs">
-                <div class="flex justify-between items-center py-1.5 border-b border-slate-850">
-                  <span class="text-slate-400">Nicho Principal:</span>
-                  <span class="font-semibold text-slate-200">Humor, Gastronomia & Negócios</span>
+                <div class="flex justify-between items-center py-1.5 border-b border-slate-800">
+                  <span class="text-slate-400">Pilar Principal:</span>
+                  <span class="font-semibold text-slate-200">Humor com @ruka & Vida Noturna</span>
                 </div>
-                <div class="flex justify-between items-center py-1.5 border-b border-slate-850">
+                <div class="flex justify-between items-center py-1.5 border-b border-slate-800">
                   <span class="text-slate-400">Empresário em:</span>
                   <span class="font-semibold text-amber-400">Bar do Coronel (SJC)</span>
                 </div>
-                <div class="flex justify-between items-center py-1.5 border-b border-slate-850">
-                  <span class="text-slate-400">Destaque de Conteúdo:</span>
-                  <span class="font-semibold text-slate-200">Esquetes com @ruka</span>
+                <div class="flex justify-between items-center py-1.5 border-b border-slate-800">
+                  <span class="text-slate-400">Mídia & Conteúdo:</span>
+                  <span class="font-semibold text-slate-200">Podcast "Aqui Acontece"</span>
                 </div>
                 <div class="flex justify-between items-center py-1.5">
-                  <span class="text-slate-400">Projeção Regional:</span>
-                  <span class="font-semibold text-emerald-400">Líder Vale do Paraíba / SP</span>
+                  <span class="text-slate-400">Público-Alvo:</span>
+                  <span class="font-semibold text-emerald-400">25 a 44 anos (69.4% da base)</span>
                 </div>
               </div>
             </div>
@@ -180,20 +187,20 @@ export function generateSingleHtmlPresentation(): string {
         <div class="space-y-6">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Métrica 01 • Volume & Inserção</span>
-              <h2 class="text-3xl font-bold text-white">Análise de Impressões & Alcance</h2>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">SLIDE 02 • IMPRESSÕES E ALCANCE</span>
+              <h2 class="text-3xl font-extrabold text-white">Inserção de Marca & Alcance Total</h2>
             </div>
-            <div class="text-right">
-              <span class="text-xs text-slate-400 block">Total Acumulado (Período)</span>
-              <span class="text-lg font-bold text-amber-400">19.4M Impressões • 8.6M Alcance</span>
+            <div class="text-right bg-slate-900/90 px-4 py-2 rounded-xl border border-slate-800">
+              <span class="text-xs text-slate-400 block font-medium">Impressões no Período</span>
+              <span class="text-lg font-black text-amber-400">19.450.000+</span>
             </div>
           </div>
 
           <div class="grid lg:grid-cols-12 gap-6">
             <div class="lg:col-span-8 bg-slate-900/90 border border-slate-800 p-5 rounded-2xl">
-              <h3 class="text-sm font-semibold text-slate-300 mb-4 flex items-center justify-between">
-                <span>Evolução Mensal: Impressões vs. Alcance Único</span>
-                <span class="text-xs font-normal text-slate-400">Janeiro a Agosto</span>
+              <h3 class="text-sm font-bold text-slate-300 mb-4 flex items-center justify-between">
+                <span>Evolução Mensal: Impressões vs. Contas Alcançadas</span>
+                <span class="text-xs font-normal text-slate-400">Crescimento constante de Janeiro a Agosto</span>
               </h3>
               <div class="h-64 relative">
                 <canvas id="chartReachImpressions"></canvas>
@@ -202,26 +209,32 @@ export function generateSingleHtmlPresentation(): string {
 
             <div class="lg:col-span-4 space-y-4">
               <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
-                <div class="text-xs text-slate-400 mb-1">Taxa de Não-Seguidores Alcançados</div>
-                <div class="text-2xl font-bold text-emerald-400">74.2%</div>
-                <p class="text-[11px] text-slate-400 mt-1">
-                  Alto poder viral via Reels de humor (esquetes com a Ruka) atraindo audiência nova continuamente.
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-slate-400 font-semibold uppercase">Não-Seguidores Alcançados</span>
+                  <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Viral</span>
+                </div>
+                <div class="text-2xl font-black text-emerald-400 mt-1">74.2%</div>
+                <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                  A maioria do público impactado vem da aba Explorar e Reels, impulsionada pelas esquetes cômicas com a Ruka.
                 </p>
               </div>
 
               <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
-                <div class="text-xs text-slate-400 mb-1">Média de Frequência de Exibição</div>
-                <div class="text-2xl font-bold text-amber-400">2.25x</div>
-                <p class="text-[11px] text-slate-400 mt-1">
-                  Cada usuário único é exposto em média a 2.25 publicações/mês, gerando alto recall de marca.
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-slate-400 font-semibold uppercase">Frequência Média</span>
+                  <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded">Brand Recall</span>
+                </div>
+                <div class="text-2xl font-black text-amber-400 mt-1">2.25x</div>
+                <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                  Cada usuário ativo na região visualiza em média mais de 2 publicações por mês, consolidando a marca do Bar do Coronel.
                 </p>
               </div>
 
               <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl">
-                <div class="text-xs text-slate-400 mb-1">Concentração Geográfica</div>
-                <div class="text-sm font-semibold text-white">48.5% São José dos Campos</div>
+                <div class="text-xs text-slate-400 font-semibold uppercase mb-1">Polo Geográfico Principal</div>
+                <div class="text-sm font-bold text-white">São José dos Campos (48.5%)</div>
                 <div class="text-xs text-slate-400 mt-1">
-                  19.2% SP Capital • 11.4% Jacareí • 8.1% Taubaté
+                  Grande SP (19.2%) • Jacareí (11.4%) • Taubaté (8.1%)
                 </div>
               </div>
             </div>
@@ -234,20 +247,20 @@ export function generateSingleHtmlPresentation(): string {
         <div class="space-y-6">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Métrica 02 • Núcleo Comparativo</span>
-              <h2 class="text-3xl font-bold text-white">Visualizações: Média Feed vs. Stories</h2>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">SLIDE 03 • COMPARATIVO FEED VS STORIES (REQUISITO PRINCIPAL)</span>
+              <h2 class="text-3xl font-extrabold text-white">Médias de Visualizações: Feed vs. Stories</h2>
             </div>
             <div class="flex items-center gap-4 text-xs font-medium">
-              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span> Média Feed: <strong>45.8K views</strong></span>
-              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span> Média Stories: <strong>9.2K views</strong></span>
+              <span class="flex items-center gap-1.5 bg-rose-500/10 border border-rose-500/20 px-3 py-1.5 rounded-xl text-rose-300"><span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span> Média Feed: <strong>45.8K views</strong></span>
+              <span class="flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/20 px-3 py-1.5 rounded-xl text-amber-300"><span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span> Média Stories: <strong>9.2K views</strong></span>
             </div>
           </div>
 
           <div class="grid lg:grid-cols-12 gap-6">
             <div class="lg:col-span-8 bg-slate-900/90 border border-slate-800 p-5 rounded-2xl">
-              <h3 class="text-sm font-semibold text-slate-300 mb-4 flex items-center justify-between">
-                <span>Comparativo Mensal de Médias de Visualizações (Jan a Ago)</span>
-                <span class="text-xs font-normal text-slate-400">Visualizações por Publicação</span>
+              <h3 class="text-sm font-bold text-slate-300 mb-4 flex items-center justify-between">
+                <span>Comparativo Mensal de Médias (Jan a Ago)</span>
+                <span class="text-xs font-normal text-slate-400">Visualizações médias por conteúdo no Feed e Stories diários</span>
               </h3>
               <div class="h-64 relative">
                 <canvas id="chartFeedVsStories"></canvas>
@@ -257,34 +270,34 @@ export function generateSingleHtmlPresentation(): string {
             <div class="lg:col-span-4 space-y-4">
               <div class="bg-gradient-to-br from-rose-950/40 to-slate-900 border border-rose-500/30 p-4 rounded-xl">
                 <div class="flex justify-between items-center">
-                  <span class="text-xs font-bold text-rose-400 uppercase">Feed & Reels</span>
+                  <span class="text-xs font-bold text-rose-400 uppercase">Média Feed (Reels)</span>
                   <span class="text-xs text-slate-400">Topo de Funil</span>
                 </div>
-                <div class="text-2xl font-black text-white mt-1">45.800 <span class="text-xs font-normal text-slate-400">views/méd</span></div>
-                <p class="text-[11px] text-slate-300 mt-2 leading-relaxed">
-                  Reels de humor com a Ruka alcançam picos de até <strong class="text-rose-400">485.000 visualizações</strong>, expandindo a base de seguidores orgânicos a custo zero.
+                <div class="text-2xl font-black text-white mt-1">45.800 <span class="text-xs font-normal text-slate-400">views/post</span></div>
+                <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                  Picos virais chegam a <strong class="text-rose-400">485.000 views</strong>. Excelente canal para novos clientes e atração de público regional para o bar.
                 </p>
               </div>
 
               <div class="bg-gradient-to-br from-amber-950/40 to-slate-900 border border-amber-500/30 p-4 rounded-xl">
                 <div class="flex justify-between items-center">
-                  <span class="text-xs font-bold text-amber-400 uppercase">Stories Diários</span>
-                  <span class="text-xs text-slate-400">Fundo de Funil & Venda</span>
+                  <span class="text-xs font-bold text-amber-400 uppercase">Média Stories</span>
+                  <span class="text-xs text-slate-400">Fundo de Funil</span>
                 </div>
-                <div class="text-2xl font-black text-white mt-1">9.200 <span class="text-xs font-normal text-slate-400">views/méd</span></div>
-                <p class="text-[11px] text-slate-300 mt-2 leading-relaxed">
-                  Taxa de retenção de <strong class="text-amber-400">13.4%</strong> da base total de seguidores assistindo diariamente os bastidores do Bar do Coronel.
+                <div class="text-2xl font-black text-white mt-1">9.200 <span class="text-xs font-normal text-slate-400">views/dia</span></div>
+                <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                  Retenção diária de <strong class="text-amber-400">13.4% dos seguidores</strong>, garantindo público fiel para reservas, promoções de chopp e eventos noturnos.
                 </p>
               </div>
 
               <div class="bg-slate-900/90 border border-slate-800 p-4 rounded-xl text-xs text-slate-300">
-                <span class="text-slate-400 block mb-1 font-medium">Relação Feed vs Stories:</span>
+                <span class="text-slate-400 block mb-1 font-medium">Proporção Feed vs Stories:</span>
                 <div class="flex items-center justify-between font-bold text-white">
                   <span>Proporção de Audiência:</span>
-                  <span class="text-amber-400">5.0x no Feed</span>
+                  <span class="text-amber-400">~5.0x no Feed</span>
                 </div>
-                <p class="text-[10px] text-slate-400 mt-1">
-                  O Feed traz novos clientes para o Coronel e os Stories convertem em reservas e presença física.
+                <p class="text-[11px] text-slate-400 mt-1">
+                  Estratégia sinérgica perfeita: o Feed gera awareness e os Stories fecham o consumo no mesmo dia.
                 </p>
               </div>
             </div>
@@ -296,38 +309,38 @@ export function generateSingleHtmlPresentation(): string {
       <div class="slide flex-col justify-center min-h-[75vh]" id="slide-4">
         <div class="space-y-6">
           <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Mídia Kit & Recomendações Estratégicas</span>
-            <h2 class="text-3xl font-bold text-white">Conclusões & Potencial Comercial</h2>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">SLIDE 04 • CONCLUSÕES & MÍDIA KIT</span>
+            <h2 class="text-3xl font-extrabold text-white">Oportunidades Comerciais & Estratégia</h2>
           </div>
 
           <div class="grid lg:grid-cols-3 gap-6">
-            <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl space-y-3">
-              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg">
-                🚀
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xl">
+                👑
               </div>
-              <h3 class="font-bold text-white text-base">Autoridade Regional</h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                @jpbcordoba é uma das maiores vozes do entretenimento e gastronomia do Vale do Paraíba, com mais de <strong class="text-white">68 mil seguidores hiper-engajados</strong> e 48.5% concentrados em São José dos Campos.
+              <h3 class="font-bold text-white text-lg">Autoridade no Vale do Paraíba</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Com mais de <strong class="text-white">330 mil seguidores fiéis</strong> e quase metade em São José dos Campos, @jpbcordoba é referência direta para decisões de consumo e entretenimento na região.
               </p>
             </div>
 
-            <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl space-y-3">
-              <div class="w-10 h-10 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold text-lg">
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center font-bold text-xl">
                 🎯
               </div>
-              <h3 class="font-bold text-white text-base">Taxa de Conversão Real</h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                Com uma média de <strong class="text-amber-400">9.200 visualizações por story</strong>, o perfil possui público qualificado (25-44 anos, 69.4% da base) com poder aquisitivo para consumo e gastronomia.
+              <h3 class="font-bold text-white text-lg">Audiência Qualificada (25 a 44 anos)</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                69.4% do público possui perfil de consumo ativo, com alto engajamento em gastronomia, cervejas artesanais, eventos, negócios e lifestyle.
               </p>
             </div>
 
-            <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl space-y-3">
-              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg">
-                💼
+            <div class="bg-slate-900/90 border border-slate-800 p-6 rounded-2xl space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xl">
+                💡
               </div>
-              <h3 class="font-bold text-white text-base">Formatos de Parceria</h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
-                Excelente fit para marcas de bebidas, alimentos, vestuário, concessionárias, serviços B2B, eventos e tecnologia através de esquetes cômicas orgânicas e publieditoriais nos stories.
+              <h3 class="font-bold text-white text-lg">Formatos de Alta Conversão</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Integração nativa de marcas em <strong class="text-emerald-300">esquetes cômicas com a Ruka</strong> (Reels) e sequências de stories matinais/noturnos com link e cupom.
               </p>
             </div>
           </div>
@@ -979,4 +992,18 @@ export function downloadStandaloneHtmlFile(): void {
   link.click();
   document.body.removeChild(link);
   URL.revokeObjectURL(url);
+}
+
+export function openStandalonePresentationInNewTab(): void {
+  const htmlContent = generateSingleHtmlPresentation();
+  const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const win = window.open(url, '_blank');
+  if (!win) {
+    // If popup blocker intervened, trigger download fallback
+    const link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank';
+    link.click();
+  }
 }

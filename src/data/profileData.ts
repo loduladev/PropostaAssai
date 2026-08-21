@@ -125,7 +125,7 @@ export const CONTENT_PILLARS: ContentPillar[] = [
   {
     id: 'humor-ruka',
     title: 'Esquetes de Humor com Ruka',
-    description: 'Vídeos cômicos de situações do dia a dia no bar, diálogos espontâneos e dinâmicas divertidas com a funcionária Ruka.',
+    description: 'Vídeos cômicos de situações do dia a dia no bar, diálogos espontâneos e dinâmicas divertidas com a Ruka.',
     sharePercentage: 45,
     avgEngagement: 6.85,
     avgViews: 82500,

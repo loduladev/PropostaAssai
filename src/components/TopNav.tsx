@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Download, ExternalLink, Maximize, Minimize, Presentation, Check } from 'lucide-react';
+import { Download, ExternalLink, Maximize, Minimize, Presentation, Check, FileDown } from 'lucide-react';
 import { JP_PROFILE_SUMMARY } from '../data/profileData';
 import { downloadStandaloneHtmlFile } from './SingleHtmlExporter';
 
@@ -8,13 +8,20 @@ interface TopNavProps {
   onTabChange: (tab: 'presentation' | 'dashboard' | 'mediakit' | 'posts') => void;
   isFullscreen: boolean;
   onToggleFullscreen: () => void;
+  onDownloadPdf: () => void;
 }
 
-export function TopNav({ currentTab, onTabChange, isFullscreen, onToggleFullscreen }: TopNavProps) {
+export function TopNav({
+  currentTab,
+  onTabChange,
+  isFullscreen,
+  onToggleFullscreen,
+  onDownloadPdf,
+}: TopNavProps) {
   const profile = JP_PROFILE_SUMMARY;
   const [downloaded, setDownloaded] = useState(false);
 
-  const handleDownload = () => {
+  const handleDownloadHtml = () => {
     downloadStandaloneHtmlFile();
     setDownloaded(true);
     setTimeout(() => setDownloaded(false), 3000);
@@ -45,7 +52,7 @@ export function TopNav({ currentTab, onTabChange, isFullscreen, onToggleFullscre
                 </a>
               </div>
               <p className="text-[11px] text-slate-400 font-medium">
-                Criador de conteúdo
+                Criador de conteúdo • {profile.followers.toLocaleString('pt-BR')} seguidores
               </p>
             </div>
           </div>
@@ -53,8 +60,15 @@ export function TopNav({ currentTab, onTabChange, isFullscreen, onToggleFullscre
           {/* Quick Mobile Download & Fullscreen icons */}
           <div className="flex md:hidden items-center gap-1.5">
             <button
-              onClick={handleDownload}
-              className="p-2 bg-amber-500/20 text-amber-400 hover:bg-amber-500/30 rounded-lg text-xs"
+              onClick={onDownloadPdf}
+              className="p-2 bg-gradient-to-r from-amber-500 to-rose-500 text-slate-950 rounded-lg text-xs font-bold shadow-sm"
+              title="Baixar Slides em PDF"
+            >
+              <FileDown className="w-4 h-4" />
+            </button>
+            <button
+              onClick={handleDownloadHtml}
+              className="p-2 bg-slate-800 text-slate-300 hover:text-white rounded-lg text-xs"
               title="Baixar HTML Único"
             >
               <Download className="w-4 h-4" />
@@ -80,32 +94,44 @@ export function TopNav({ currentTab, onTabChange, isFullscreen, onToggleFullscre
         </div>
 
         {/* Action Buttons (Desktop) */}
-        <div className="hidden md:flex items-center gap-2.5">
+        <div className="hidden md:flex items-center gap-2">
+          {/* Main PDF Presentation Download Button */}
           <button
-            onClick={handleDownload}
-            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all shadow-md ${
+            onClick={onDownloadPdf}
+            className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold bg-gradient-to-r from-amber-500 via-rose-500 to-amber-500 hover:from-amber-400 hover:to-rose-400 text-slate-950 shadow-md shadow-amber-500/10 transition-all cursor-pointer"
+            title="Baixar versão PDF estilo apresentação com todos os 5 slides"
+          >
+            <FileDown className="w-3.5 h-3.5" />
+            <span>Baixar PDF (Slides)</span>
+          </button>
+
+          {/* Standalone HTML Exporter */}
+          <button
+            onClick={handleDownloadHtml}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all ${
               downloaded
-                ? 'bg-emerald-600 text-white'
-                : 'bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 shadow-amber-500/10'
+                ? 'bg-emerald-600/90 text-white border-emerald-500'
+                : 'bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border-slate-700'
             }`}
             title="Exportar apresentação completa em um arquivo único HTML + JS autônomo"
           >
             {downloaded ? (
               <>
-                <Check className="w-3.5 h-3.5" />
+                <Check className="w-3.5 h-3.5 text-white" />
                 <span>HTML Baixado!</span>
               </>
             ) : (
               <>
-                <Download className="w-3.5 h-3.5" />
-                <span>Baixar Único Arquivo .HTML</span>
+                <Download className="w-3.5 h-3.5 text-slate-400" />
+                <span>Arquivo .HTML</span>
               </>
             )}
           </button>
 
+          {/* Fullscreen toggle */}
           <button
             onClick={onToggleFullscreen}
-            className="p-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 rounded-xl text-xs transition"
+            className="p-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 rounded-xl text-xs transition cursor-pointer"
             title={isFullscreen ? 'Sair de Tela Cheia' : 'Apresentar em Tela Cheia (F11)'}
           >
             {isFullscreen ? <Minimize className="w-4 h-4" /> : <Maximize className="w-4 h-4" />}
