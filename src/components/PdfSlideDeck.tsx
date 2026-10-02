@@ -441,7 +441,7 @@ export const PdfSlideDeck: React.FC<PdfSlideDeckProps> = ({ idPrefix = 'pdf-slid
             </div>
             <h3 className="font-bold text-white text-lg">Autoridade no Vale do Paraíba</h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Com mais de <strong className="text-white">330 mil seguidores fiéis</strong> e quase metade em São José dos Campos, @jpbcordoba é referência direta para decisões de consumo e entretenimento na região.
+              Com mais de <strong className="text-white">360 mil seguidores fiéis</strong> e quase metade em São José dos Campos, @jpbcordoba é referência direta para decisões de consumo e entretenimento na região.
             </p>
           </div>
 
@@ -497,11 +497,11 @@ export const PdfSlideDeck: React.FC<PdfSlideDeckProps> = ({ idPrefix = 'pdf-slid
               </div>
 
               <h2 className="text-2xl font-black text-white tracking-tight">
-                Proposta: João Córdoba • 330 Mil Seguidores
+                Proposta: João Córdoba • 360 Mil Seguidores
               </h2>
 
               <p className="text-xs text-amber-100/95 font-medium leading-tight">
-                Contrato quadrimestral <strong className="text-white">(SET • OUT • NOV • DEZ)</strong> com entrega de <strong className="text-white">4 posts em formato REELS por mês</strong> (Total de 16 Reels).
+                Contrato trimestral <strong className="text-white">(OUT • NOV • DEZ)</strong> com entrega de <strong className="text-white">2 posts em formato REELS por mês</strong> (Total de 6 Reels).
               </p>
             </div>
 
@@ -510,11 +510,11 @@ export const PdfSlideDeck: React.FC<PdfSlideDeckProps> = ({ idPrefix = 'pdf-slid
                 VALOR SUGERIDO PARA FECHAMENTO
               </span>
               <div className="text-2xl font-black text-white flex items-baseline justify-end gap-1">
-                R$ 6.800
+                R$ 6.800,00
                 <span className="text-xs font-normal text-amber-200">/ mês</span>
               </div>
               <span className="text-[10px] font-bold text-amber-300 block mt-0.5 bg-white/10 px-2 py-0.5 rounded border border-white/10">
-                Total 4 Meses: R$ 27.200 (16 Reels)
+                Total 3 Meses: R$ 20.400,00 (6 Reels)
               </span>
             </div>
           </div>
@@ -534,19 +534,19 @@ export const PdfSlideDeck: React.FC<PdfSlideDeckProps> = ({ idPrefix = 'pdf-slid
             </div>
 
             <p className="text-[11px] text-slate-300 leading-snug">
-              Valor calibrado no ponto de equilíbrio do mercado para 330 mil seguidores com desconto de ~40% sobre a tabela avulsa.
+              Valor calibrado no ponto de equilíbrio do mercado para 360 mil seguidores com desconto de ~40% sobre a tabela avulsa.
             </p>
 
             <div className="space-y-0.5">
               <div className="text-2xl font-black text-white flex items-baseline gap-1.5">
-                R$ 6.800 <span className="text-xs font-normal text-slate-400">/ mês</span>
+                R$ 6.800,00 <span className="text-xs font-normal text-slate-400">/ mês</span>
               </div>
               <div className="text-xs font-semibold text-slate-200">
-                Total do Contrato: <strong className="text-white">R$ 27.200</strong>
+                <strong className="text-white">Total 3 Meses: R$ 20.400,00 (6 Reels)</strong>
               </div>
               <div className="text-xs font-semibold text-emerald-400 flex items-center gap-1">
                 <CheckCircle2 className="w-3 h-3 text-emerald-400 flex-shrink-0" />
-                <span>Equivale a R$ 1.700 por vídeo Reels</span>
+                <span>Contrato trimestral (OUT • NOV • DEZ) • 3 parcelas de R$ 6.800,00</span>
               </div>
             </div>
 
@@ -557,95 +557,76 @@ export const PdfSlideDeck: React.FC<PdfSlideDeckProps> = ({ idPrefix = 'pdf-slid
               <ul className="space-y-1 text-xs text-slate-200">
                 <li className="flex items-start gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span><strong className="text-white">4 Reels por mês no feed em Collab</strong> (16 Reels totais no período)</span>
+                  <span><strong className="text-white">2 Reels (com possibilidade de collab)</strong> por mês no Feed (Total 6 Reels)</span>
                 </li>
                 <li className="flex items-start gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span><strong className="text-white">Gravação presencial no Assaí</strong> com demonstração de produtos e ofertas da semana</span>
+                  <span><strong className="text-white">4 combo de 3 stories</strong> (3 telas de no mínimo 15 segundos cada, total 12 telas);</span>
                 </li>
                 <li className="flex items-start gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span><strong className="text-white">Menção e repostagem de suporte nos Stories</strong> nos dias de publicação dos vídeos</span>
-                </li>
-                <li className="flex items-start gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span><strong className="text-white">Alinhamento prévio e aprovação de roteiros</strong> com a equipe de marketing do Assaí</span>
+                  <span><strong className="text-white">4 Visitas a loja mais próxima do seu endereço</strong> para gravações dos conteúdos</span>
                 </li>
               </ul>
             </div>
 
             <div className="pt-1 text-[11px] text-slate-300 bg-slate-950/60 p-2 rounded-lg border border-slate-800">
-              <strong className="text-amber-400">Direitos de Imagem:</strong> Uso orgânico irrestrito + direito de repostagem em todas as redes do Assaí Atacadista.
+              <strong className="text-amber-400">Direitos de Imagem:</strong> Uso orgânico irrestrito + direito de repostagem em todas as redes do Assaí Atacadista e aprovação prévia.
             </div>
           </div>
 
-          {/* Schedule 4 Months (7 cols) */}
+          {/* Schedule 3 Months (7 cols) */}
           <div className="col-span-7 bg-slate-900/95 border border-slate-800 p-4 rounded-xl space-y-2.5">
             <div className="flex items-center gap-2 pb-1">
               <Calendar className="w-4 h-4 text-orange-400" />
               <h3 className="text-xs font-bold text-white uppercase tracking-wider">
-                Cronograma Estratégico de Entregas (Setembro a Dezembro)
+                Cronograma Estratégico de Entregas (Outubro a Dezembro)
               </h3>
             </div>
 
-            <div className="grid grid-cols-2 gap-2.5">
-              {/* SET */}
-              <div className="bg-slate-950/90 border border-slate-800 p-2.5 rounded-lg space-y-1">
-                <div className="flex justify-between items-center">
-                  <span className="text-[11px] font-black text-orange-400 uppercase">SETEMBRO</span>
-                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-300">4 Reels</span>
-                </div>
-                <div className="text-[11px] font-bold text-white">Lançamento & Economia Familiar</div>
-                <ul className="space-y-0.5 text-[10px] text-slate-300 leading-tight">
-                  <li>• 1º Tour pelas melhores ofertas da loja</li>
-                  <li>• Dicas de compra em atacado vs varejo</li>
-                  <li>• Carrinho econômico da semana</li>
-                  <li>• Receita prática com produtos Assaí</li>
-                </ul>
-              </div>
-
+            <div className="grid grid-cols-3 gap-2">
               {/* OUT */}
-              <div className="bg-slate-950/90 border border-slate-800 p-2.5 rounded-lg space-y-1">
+              <div className="bg-slate-950/90 border border-slate-800 p-2 rounded-lg space-y-1">
                 <div className="flex justify-between items-center">
-                  <span className="text-[11px] font-black text-orange-400 uppercase">OUTUBRO</span>
-                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-300">4 Reels</span>
+                  <span className="text-[10px] font-black text-orange-400 uppercase">OUTUBRO</span>
+                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-300">2 Reels</span>
                 </div>
-                <div className="text-[11px] font-bold text-white">Primavera & Dia das Crianças</div>
-                <ul className="space-y-0.5 text-[10px] text-slate-300 leading-tight">
-                  <li>• Compras especiais Dia das Crianças</li>
-                  <li>• Alimentos frescos & hortifrúti Assaí</li>
-                  <li>• Sobremesas econômicas e lanches</li>
-                  <li>• Ofertas de fim de mês imperdíveis</li>
+                <div className="text-[10px] font-bold text-white leading-tight">Primavera & Crianças</div>
+                <ul className="space-y-0.5 text-[9px] text-slate-300 leading-tight">
+                  <li>• 1ª Visita presencial p/ ofertas</li>
+                  <li>• 2 Reels (collab)</li>
+                  <li>• Combo Stories (15s+)</li>
+                  <li>• Destaque Hortifrúti Assaí</li>
                 </ul>
               </div>
 
               {/* NOV */}
-              <div className="bg-slate-950/90 border border-slate-800 p-2.5 rounded-lg space-y-1">
+              <div className="bg-slate-950/90 border border-slate-800 p-2 rounded-lg space-y-1">
                 <div className="flex justify-between items-center">
-                  <span className="text-[11px] font-black text-orange-400 uppercase">NOVEMBRO</span>
-                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-300">4 Reels</span>
+                  <span className="text-[10px] font-black text-orange-400 uppercase">NOVEMBRO</span>
+                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-300">2 Reels</span>
                 </div>
-                <div className="text-[11px] font-bold text-white">Black Friday & Antecipação</div>
-                <ul className="space-y-0.5 text-[10px] text-slate-300 leading-tight">
-                  <li>• Esquenta Black Friday Assaí</li>
-                  <li>• Bebidas e itens não perecíveis</li>
-                  <li>• Compras inteligentes para comerciantes</li>
-                  <li>• Cobertura do dia oficial da Black Friday</li>
+                <div className="text-[10px] font-bold text-white leading-tight">Black Friday & Ofertas</div>
+                <ul className="space-y-0.5 text-[9px] text-slate-300 leading-tight">
+                  <li>• Visita captação de ofertas</li>
+                  <li>• 2 Reels Esquenta Black Friday</li>
+                  <li>• Combo Stories promocionais</li>
+                  <li>• Economia e atacado</li>
                 </ul>
               </div>
 
               {/* DEZ */}
-              <div className="bg-amber-950/30 border border-amber-500/50 p-2.5 rounded-lg space-y-1">
+              <div className="bg-amber-950/30 border border-amber-500/50 p-2 rounded-lg space-y-1">
                 <div className="flex justify-between items-center">
-                  <span className="text-[11px] font-black text-amber-400 uppercase">DEZEMBRO</span>
-                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300">4 Reels</span>
+                  <span className="text-[10px] font-black text-amber-400 uppercase">DEZEMBRO</span>
+                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300">2 Reels</span>
                 </div>
-                <div className="text-[11px] font-bold text-amber-200">Festas de Fim de Ano & Natal</div>
-                <ul className="space-y-0.5 text-[10px] text-amber-100/90 leading-tight">
-                  <li>• Ceia de Natal completa e econômica</li>
-                  <li>• Carnes, panetones e bebidas festivas</li>
-                  <li>• Preparativos para a virada de ano</li>
-                  <li>• Retrospectiva de economia no Assaí</li>
+                <div className="text-[10px] font-bold text-amber-200 leading-tight">Fim de Ano & Natal</div>
+                <ul className="space-y-0.5 text-[9px] text-amber-100/90 leading-tight">
+                  <li>• Visita especial ceia natalina</li>
+                  <li>• 2 Reels ceia econômica</li>
+                  <li>• Combo Stories festivos</li>
+                  <li>• Carnes, panetones e bebidas</li>
                 </ul>
               </div>
             </div>
@@ -655,11 +636,11 @@ export const PdfSlideDeck: React.FC<PdfSlideDeckProps> = ({ idPrefix = 'pdf-slid
               <div className="flex items-center gap-2">
                 <FileText className="w-4 h-4 text-orange-400" />
                 <span className="text-slate-300 text-[11px]">
-                  RESUMO: Fechamento sugerido: <strong className="text-amber-400">R$ 6.800/mês</strong> (R$ 27.200 no total de 4 meses por 16 Reels).
+                  RESUMO: Fechamento sugerido: <strong className="text-amber-400">R$ 6.800,00/mês</strong> (Total 3 Meses: R$ 20.400,00 - 6 Reels).
                 </span>
               </div>
               <span className="text-[10px] font-semibold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">
-                Excelente ROI para 330k de Audiência
+                Excelente ROI para 360k de Audiência
               </span>
             </div>
           </div>

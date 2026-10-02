@@ -42,8 +42,8 @@ export function MediaKitCalculator() {
       setIncludeBarActivation(true);
       setIncludePodcast(false);
     } else if (preset === 'assai') {
-      setReelsCount(4);
-      setStoriesSets(0);
+      setReelsCount(2);
+      setStoriesSets(4);
       setIncludeBarActivation(false);
       setIncludePodcast(false);
     } else {
@@ -84,7 +84,7 @@ export function MediaKitCalculator() {
             onClick={() => handleApplyPreset('assai')}
             className="px-3 py-1 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 text-white rounded-lg text-xs font-bold transition shadow-sm flex items-center gap-1"
           >
-            🏢 Proposta Assaí (4 Reels/mês • R$ 6.800)
+            🏢 Proposta Assaí (R$ 6.800/mês • Total R$ 20.400)
           </button>
           <button
             onClick={() => handleApplyPreset('starter')}

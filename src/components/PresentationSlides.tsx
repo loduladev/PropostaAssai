@@ -469,7 +469,7 @@ export function PresentationSlides({
                   </div>
                   <h3 className="font-bold text-white text-base">Autoridade no Vale do Paraíba</h3>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    Com mais de <strong className="text-white">330 mil seguidores fiéis</strong> e quase metade em São José dos Campos, @jpbcordoba é referência direta para decisões de consumo e entretenimento na região.
+                    Com mais de <strong className="text-white">360 mil seguidores fiéis</strong> e quase metade em São José dos Campos, @jpbcordoba é referência direta para decisões de consumo e entretenimento na região.
                   </p>
                 </div>
 
@@ -526,12 +526,12 @@ export function PresentationSlides({
 
                     {/* Main Title */}
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-                      Proposta: João Córdoba • 330 Mil Seguidores
+                      Proposta: João Córdoba • 360 Mil Seguidores
                     </h2>
 
                     {/* Subtitle / Contract Scope */}
                     <p className="text-sm sm:text-base text-amber-100/95 font-medium leading-relaxed">
-                      Contrato quadrimestral <strong className="text-white">(SET • OUT • NOV • DEZ)</strong> com entrega de <strong className="text-white">4 posts em formato REELS por mês</strong> (Total de 16 Reels).
+                      Contrato trimestral <strong className="text-white">(OUT • NOV • DEZ)</strong> com entrega de <strong className="text-white">2 posts em formato REELS por mês</strong> (Total de 6 Reels).
                     </p>
                   </div>
 
@@ -541,11 +541,11 @@ export function PresentationSlides({
                       VALOR SUGERIDO PARA FECHAMENTO
                     </span>
                     <div className="text-3xl sm:text-4xl font-black text-white flex items-baseline lg:justify-end gap-1.5">
-                      R$ 6.800
+                      R$ 6.800,00
                       <span className="text-sm font-normal text-amber-200">/ mês</span>
                     </div>
                     <span className="text-xs font-bold text-amber-300 block mt-1.5 bg-white/10 px-2.5 py-1 rounded-lg border border-white/10">
-                      Total 4 Meses: R$ 27.200 (16 Reels)
+                      Total 3 Meses: R$ 20.400,00 (6 Reels)
                     </span>
                   </div>
                 </div>
@@ -559,22 +559,22 @@ export function PresentationSlides({
                     Pacote Recomendado (Equilíbrio de Mercado)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Valor calibrado no ponto de equilíbrio do mercado para 330 mil seguidores com desconto de ~40% sobre a tabela avulsa.
+                    Valor calibrado no ponto de equilíbrio do mercado para 360 mil seguidores com desconto de ~40% sobre a tabela avulsa.
                   </p>
                 </div>
 
                 {/* Price block */}
                 <div className="space-y-1">
                   <div className="text-3xl sm:text-4xl font-black text-white flex items-baseline gap-2">
-                    R$ 6.800
+                    R$ 6.800,00
                     <span className="text-base font-medium text-slate-400">/ mês</span>
                   </div>
                   <div className="text-sm font-semibold text-slate-200">
-                    Total do Contrato: <strong className="text-white">R$ 27.200</strong>
+                    <strong className="text-white">Total 3 Meses: R$ 20.400,00 (6 Reels)</strong>
                   </div>
                   <div className="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 pt-1">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
-                    <span>Equivale a R$ 1.700 por vídeo Reels</span>
+                    <span>Contrato trimestral (OUT • NOV • DEZ) • 3 parcelas de R$ 6.800,00</span>
                   </div>
                 </div>
 
@@ -592,7 +592,7 @@ export function PresentationSlides({
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                       </div>
                       <span className="leading-snug">
-                        <strong className="text-white">4 Reels por mês no feed em Collab</strong> (16 Reels totais no período)
+                        <strong className="text-white">2 Reels (com possibilidade de collab)</strong> por mês no Feed (Total de 6 Reels no período)
                       </span>
                     </li>
 
@@ -601,7 +601,7 @@ export function PresentationSlides({
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                       </div>
                       <span className="leading-snug">
-                        <strong className="text-white">Gravação presencial no Assaí</strong> com demonstração de produtos e ofertas da semana
+                        <strong className="text-white">4 combo de 3 stories</strong> (3 telas de no mínimo 15 segundos cada, total 12 telas);
                       </span>
                     </li>
 
@@ -610,16 +610,7 @@ export function PresentationSlides({
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                       </div>
                       <span className="leading-snug">
-                        <strong className="text-white">Menção e repostagem de suporte nos Stories</strong> nos dias de publicação dos vídeos
-                      </span>
-                    </li>
-
-                    <li className="flex items-start gap-3 text-xs sm:text-sm text-slate-200">
-                      <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5 border border-emerald-500/30">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                      </div>
-                      <span className="leading-snug">
-                        <strong className="text-white">Alinhamento prévio e aprovação de roteiros</strong> com a equipe de marketing do Assaí
+                        <strong className="text-white">4 Visitas a loja mais próxima do seu endereço</strong> para gravações dos conteúdos
                       </span>
                     </li>
                   </ul>
@@ -631,12 +622,12 @@ export function PresentationSlides({
                 <div className="pt-1 text-xs sm:text-sm text-slate-300 leading-relaxed bg-slate-950/60 p-4 rounded-xl border border-slate-850">
                   <strong className="text-amber-400 font-bold">Direitos de Imagem:</strong>{' '}
                   <span className="text-slate-300">
-                    Uso orgânico irrestrito + direito de repostagem em todas as redes do Assaí Atacadista.
+                    Uso orgânico irrestrito + direito de repostagem em todas as redes do Assaí Atacadista e aprovação prévia de roteiros.
                   </span>
                 </div>
               </div>
 
-              {/* Strategic Delivery Schedule (Setembro a Dezembro) */}
+              {/* Strategic Delivery Schedule (Outubro a Dezembro) */}
               <div className="bg-slate-900 border border-slate-800 p-6 sm:p-7 rounded-2xl shadow-xl space-y-5">
                 {/* Header */}
                 <div className="flex items-center gap-2.5 pb-2">
@@ -644,33 +635,12 @@ export function PresentationSlides({
                     <Calendar className="w-4 h-4 text-orange-400" />
                   </span>
                   <h3 className="text-base sm:text-lg font-bold text-white tracking-tight">
-                    Cronograma Estratégico de Entregas (Setembro a Dezembro)
+                    Cronograma Estratégico de Entregas (Outubro a Dezembro)
                   </h3>
                 </div>
 
-                {/* 4 Columns for Sept, Oct, Nov, Dec */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                  {/* SETEMBRO */}
-                  <div className="bg-slate-950/80 border border-slate-800 p-4 rounded-xl space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-xs font-black tracking-wider text-orange-400 uppercase">
-                        SETEMBRO
-                      </span>
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                        4 Reels
-                      </span>
-                    </div>
-                    <div className="text-xs font-bold text-white">
-                      Lançamento & Economia Familiar
-                    </div>
-                    <ul className="space-y-1.5 text-[11px] text-slate-300">
-                      <li className="leading-snug">• 1º Tour pelas melhores ofertas da loja</li>
-                      <li className="leading-snug">• Dicas de compra em atacado vs varejo</li>
-                      <li className="leading-snug">• Carrinho econômico da semana</li>
-                      <li className="leading-snug">• Receita prática com produtos Assaí</li>
-                    </ul>
-                  </div>
-
+                {/* 3 Columns for Oct, Nov, Dec */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {/* OUTUBRO */}
                   <div className="bg-slate-950/80 border border-slate-800 p-4 rounded-xl space-y-3">
                     <div className="flex justify-between items-center">
@@ -678,17 +648,17 @@ export function PresentationSlides({
                         OUTUBRO
                       </span>
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                        4 Reels
+                        2 Reels
                       </span>
                     </div>
                     <div className="text-xs font-bold text-white">
                       Primavera & Dia das Crianças
                     </div>
                     <ul className="space-y-1.5 text-[11px] text-slate-300">
-                      <li className="leading-snug">• Compras especiais Dia das Crianças</li>
-                      <li className="leading-snug">• Alimentos frescos & hortifrúti Assaí</li>
-                      <li className="leading-snug">• Sobremesas econômicas e lanches</li>
-                      <li className="leading-snug">• Ofertas de fim de mês imperdíveis</li>
+                      <li className="leading-snug">• 1ª Visita presencial para gravação de ofertas</li>
+                      <li className="leading-snug">• 2 Reels (com possibilidade de collab)</li>
+                      <li className="leading-snug">• Combo de Stories (3 telas de 15s+)</li>
+                      <li className="leading-snug">• Compras especiais Dia das Crianças & Hortifrúti</li>
                     </ul>
                   </div>
 
@@ -699,17 +669,17 @@ export function PresentationSlides({
                         NOVEMBRO
                       </span>
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                        4 Reels
+                        2 Reels
                       </span>
                     </div>
                     <div className="text-xs font-bold text-white">
-                      Black Friday & Antecipação
+                      Black Friday & Economia
                     </div>
                     <ul className="space-y-1.5 text-[11px] text-slate-300">
-                      <li className="leading-snug">• Esquenta Black Friday Assaí</li>
-                      <li className="leading-snug">• Bebidas e itens não perecíveis</li>
-                      <li className="leading-snug">• Compras inteligentes para comerciantes</li>
-                      <li className="leading-snug">• Cobertura do dia oficial da Black Friday</li>
+                      <li className="leading-snug">• Visitas presenciais à loja para captação de ofertas</li>
+                      <li className="leading-snug">• 2 Reels focados em Esquenta Black Friday</li>
+                      <li className="leading-snug">• Combo de Stories com ofertas da semana</li>
+                      <li className="leading-snug">• Bebidas e compras inteligentes em atacado</li>
                     </ul>
                   </div>
 
@@ -720,17 +690,17 @@ export function PresentationSlides({
                         DEZEMBRO
                       </span>
                       <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                        4 Reels
+                        2 Reels
                       </span>
                     </div>
                     <div className="text-xs font-bold text-amber-200">
                       Festas de Fim de Ano & Natal
                     </div>
                     <ul className="space-y-1.5 text-[11px] text-amber-100/90">
-                      <li className="leading-snug">• Ceia de Natal completa e econômica</li>
-                      <li className="leading-snug">• Carnes, panetones e bebidas festivas</li>
-                      <li className="leading-snug">• Preparativos para a virada de ano</li>
-                      <li className="leading-snug">• Retrospectiva de economia no Assaí</li>
+                      <li className="leading-snug">• Visita especial para cobertura de compras de Natal</li>
+                      <li className="leading-snug">• 2 Reels temáticos com ceia completa e econômica</li>
+                      <li className="leading-snug">• Combo de Stories de encerramento de ano</li>
+                      <li className="leading-snug">• Carnes, panetones e bebidas festivas Assaí</li>
                     </ul>
                   </div>
                 </div>
@@ -747,13 +717,13 @@ export function PresentationSlides({
                       RESUMO DA RECOMENDAÇÃO PARA O ASSAÍ ATACADISTA
                     </h4>
                     <p className="text-xs text-slate-300">
-                      Fechamento sugerido: <strong className="text-amber-400 font-bold">R$ 6.800/mês</strong> <span className="text-slate-400">(R$ 27.200 no total de 4 meses por 16 Reels).</span>
+                      Fechamento sugerido: <strong className="text-amber-400 font-bold">R$ 6.800,00/mês</strong> <span className="text-slate-400">(Total 3 Meses: R$ 20.400,00 - 6 Reels em OUT • NOV • DEZ).</span>
                     </p>
                   </div>
                 </div>
 
                 <div className="self-stretch sm:self-auto flex items-center justify-center px-4 py-2 bg-slate-950 text-slate-200 border border-slate-700 rounded-xl text-xs font-semibold whitespace-nowrap shadow-sm">
-                  Excelente ROI para 330k de Audiência
+                  Excelente ROI para 360k de Audiência
                 </div>
               </div>
             </motion.div>

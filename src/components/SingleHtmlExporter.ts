@@ -55,7 +55,7 @@ export function generateSingleHtmlPresentation(): string {
           <span class="font-bold text-slate-100 text-sm">@${profile.username}</span>
           <span class="bg-amber-500/20 text-amber-300 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-amber-500/30">Relatório Oficial</span>
         </div>
-        <p class="text-[11px] text-slate-400 font-medium">Criador de conteúdo • 330.000 seguidores</p>
+        <p class="text-[11px] text-slate-400 font-medium">Criador de conteúdo • 360.000 seguidores</p>
       </div>
     </div>
 
@@ -320,7 +320,7 @@ export function generateSingleHtmlPresentation(): string {
               </div>
               <h3 class="font-bold text-white text-lg">Autoridade no Vale do Paraíba</h3>
               <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Com mais de <strong class="text-white">330 mil seguidores fiéis</strong> e quase metade em São José dos Campos, @jpbcordoba é referência direta para decisões de consumo e entretenimento na região.
+                Com mais de <strong class="text-white">360 mil seguidores fiéis</strong> e quase metade em São José dos Campos, @jpbcordoba é referência direta para decisões de consumo e entretenimento na região.
               </p>
             </div>
 
@@ -364,11 +364,11 @@ export function generateSingleHtmlPresentation(): string {
                 </div>
 
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-                  Proposta: João Córdoba • 330 Mil Seguidores
+                  Proposta: João Córdoba • 360 Mil Seguidores
                 </h2>
 
                 <p class="text-sm sm:text-base text-amber-100/95 font-medium leading-relaxed">
-                  Contrato quadrimestral <strong class="text-white">(SET • OUT • NOV • DEZ)</strong> com entrega de <strong class="text-white">4 posts em formato REELS por mês</strong> (Total de 16 Reels).
+                  Contrato trimestral <strong class="text-white">(OUT • NOV • DEZ)</strong> com entrega de <strong class="text-white">2 posts em formato REELS por mês</strong> (Total de 6 Reels).
                 </p>
               </div>
 
@@ -378,11 +378,11 @@ export function generateSingleHtmlPresentation(): string {
                   VALOR SUGERIDO PARA FECHAMENTO
                 </span>
                 <div class="text-3xl sm:text-4xl font-black text-white flex items-baseline lg:justify-end gap-1.5">
-                  R$ 6.800
+                  R$ 6.800,00
                   <span class="text-sm font-normal text-amber-200">/ mês</span>
                 </div>
                 <span class="text-xs font-bold text-amber-300 block mt-1.5 bg-white/10 px-2.5 py-1 rounded-lg border border-white/10">
-                  Total 4 Meses: R$ 27.200 (16 Reels)
+                  Total 3 Meses: R$ 20.400,00 (6 Reels)
                 </span>
               </div>
             </div>
@@ -396,21 +396,21 @@ export function generateSingleHtmlPresentation(): string {
                 Pacote Recomendado (Equilíbrio de Mercado)
               </h3>
               <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Valor calibrado no ponto de equilíbrio do mercado para 330 mil seguidores com desconto de ~40% sobre a tabela avulsa.
+                Valor calibrado no ponto de equilíbrio do mercado para 360 mil seguidores com desconto de ~40% sobre a tabela avulsa.
               </p>
             </div>
 
             <!-- Price block -->
             <div class="space-y-1">
               <div class="text-3xl sm:text-4xl font-black text-white flex items-baseline gap-2">
-                R$ 6.800
+                R$ 6.800,00
                 <span class="text-base font-medium text-slate-400">/ mês</span>
               </div>
               <div class="text-sm font-semibold text-slate-200">
-                Total do Contrato: <strong class="text-white">R$ 27.200</strong>
+                <strong class="text-white">Total 3 Meses: R$ 20.400,00 (6 Reels)</strong>
               </div>
               <div class="text-xs font-semibold text-emerald-400 flex items-center gap-1.5 pt-1">
-                <span>✓ Equivale a R$ 1.700 por vídeo Reels</span>
+                <span>✓ Contrato trimestral (OUT • NOV • DEZ) • 3 parcelas de R$ 6.800,00</span>
               </div>
             </div>
 
@@ -428,7 +428,7 @@ export function generateSingleHtmlPresentation(): string {
                     ✓
                   </div>
                   <span class="leading-snug">
-                    <strong class="text-white">4 Reels por mês no feed em Collab</strong> (16 Reels totais no período)
+                    <strong class="text-white">2 Reels (com possibilidade de collab)</strong> por mês no Feed (Total de 6 Reels no período)
                   </span>
                 </li>
 
@@ -437,7 +437,7 @@ export function generateSingleHtmlPresentation(): string {
                     ✓
                   </div>
                   <span class="leading-snug">
-                    <strong class="text-white">Gravação presencial no Assaí</strong> com demonstração de produtos e ofertas da semana
+                    <strong class="text-white">4 combo de 3 stories</strong> (3 telas de no mínimo 15 segundos cada, total 12 telas);
                   </span>
                 </li>
 
@@ -446,16 +446,7 @@ export function generateSingleHtmlPresentation(): string {
                     ✓
                   </div>
                   <span class="leading-snug">
-                    <strong class="text-white">Menção e repostagem de suporte nos Stories</strong> nos dias de publicação dos vídeos
-                  </span>
-                </li>
-
-                <li class="flex items-start gap-3 text-xs sm:text-sm text-slate-200">
-                  <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5 border border-emerald-500/30 text-xs">
-                    ✓
-                  </div>
-                  <span class="leading-snug">
-                    <strong class="text-white">Alinhamento prévio e aprovação de roteiros</strong> com a equipe de marketing do Assaí
+                    <strong class="text-white">4 Visitas a loja mais próxima do seu endereço</strong> para gravações dos conteúdos
                   </span>
                 </li>
               </ul>
@@ -467,12 +458,12 @@ export function generateSingleHtmlPresentation(): string {
             <div class="pt-1 text-xs sm:text-sm text-slate-300 leading-relaxed bg-slate-950/60 p-4 rounded-xl border border-slate-850">
               <strong class="text-amber-400 font-bold">Direitos de Imagem:</strong>{' '}
               <span class="text-slate-300">
-                Uso orgânico irrestrito + direito de repostagem em todas as redes do Assaí Atacadista.
+                Uso orgânico irrestrito + direito de repostagem em todas as redes do Assaí Atacadista e aprovação prévia de roteiros.
               </span>
             </div>
           </div>
 
-          <!-- Strategic Delivery Schedule (Setembro a Dezembro) -->
+          <!-- Strategic Delivery Schedule (Outubro a Dezembro) -->
           <div class="bg-slate-900 border border-slate-800 p-6 sm:p-7 rounded-2xl shadow-xl space-y-5">
             <!-- Header -->
             <div class="flex items-center gap-2.5 pb-2">
@@ -480,33 +471,12 @@ export function generateSingleHtmlPresentation(): string {
                 📅
               </span>
               <h3 class="text-base sm:text-lg font-bold text-white tracking-tight">
-                Cronograma Estratégico de Entregas (Setembro a Dezembro)
+                Cronograma Estratégico de Entregas (Outubro a Dezembro)
               </h3>
             </div>
 
-            <!-- 4 Columns for Sept, Oct, Nov, Dec -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <!-- SETEMBRO -->
-              <div class="bg-slate-950/80 border border-slate-800 p-4 rounded-xl space-y-3">
-                <div class="flex justify-between items-center">
-                  <span class="text-xs font-black tracking-wider text-orange-400 uppercase">
-                    SETEMBRO
-                  </span>
-                  <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                    4 Reels
-                  </span>
-                </div>
-                <div class="text-xs font-bold text-white">
-                  Lançamento & Economia Familiar
-                </div>
-                <ul class="space-y-1.5 text-[11px] text-slate-300">
-                  <li class="leading-snug">• 1º Tour pelas melhores ofertas da loja</li>
-                  <li class="leading-snug">• Dicas de compra em atacado vs varejo</li>
-                  <li class="leading-snug">• Carrinho econômico da semana</li>
-                  <li class="leading-snug">• Receita prática com produtos Assaí</li>
-                </ul>
-              </div>
-
+            <!-- 3 Columns for Oct, Nov, Dec -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               <!-- OUTUBRO -->
               <div class="bg-slate-950/80 border border-slate-800 p-4 rounded-xl space-y-3">
                 <div class="flex justify-between items-center">
@@ -514,17 +484,17 @@ export function generateSingleHtmlPresentation(): string {
                     OUTUBRO
                   </span>
                   <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                    4 Reels
+                    2 Reels
                   </span>
                 </div>
                 <div class="text-xs font-bold text-white">
                   Primavera & Dia das Crianças
                 </div>
                 <ul class="space-y-1.5 text-[11px] text-slate-300">
-                  <li class="leading-snug">• Compras especiais Dia das Crianças</li>
-                  <li class="leading-snug">• Alimentos frescos & hortifrúti Assaí</li>
-                  <li class="leading-snug">• Sobremesas econômicas e lanches</li>
-                  <li class="leading-snug">• Ofertas de fim de mês imperdíveis</li>
+                  <li class="leading-snug">• 1ª Visita presencial para gravação de ofertas</li>
+                  <li class="leading-snug">• 2 Reels (com possibilidade de collab)</li>
+                  <li class="leading-snug">• Combo de Stories (3 telas de 15s+)</li>
+                  <li class="leading-snug">• Compras especiais Dia das Crianças & Hortifrúti</li>
                 </ul>
               </div>
 
@@ -535,17 +505,17 @@ export function generateSingleHtmlPresentation(): string {
                     NOVEMBRO
                   </span>
                   <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                    4 Reels
+                    2 Reels
                   </span>
                 </div>
                 <div class="text-xs font-bold text-white">
-                  Black Friday & Antecipação
+                  Black Friday & Economia
                 </div>
                 <ul class="space-y-1.5 text-[11px] text-slate-300">
-                  <li class="leading-snug">• Esquenta Black Friday Assaí</li>
-                  <li class="leading-snug">• Bebidas e itens não perecíveis</li>
-                  <li class="leading-snug">• Compras inteligentes para comerciantes</li>
-                  <li class="leading-snug">• Cobertura do dia oficial da Black Friday</li>
+                  <li class="leading-snug">• Visitas presenciais à loja para captação de ofertas</li>
+                  <li class="leading-snug">• 2 Reels focados em Esquenta Black Friday</li>
+                  <li class="leading-snug">• Combo de Stories com ofertas da semana</li>
+                  <li class="leading-snug">• Bebidas e compras inteligentes em atacado</li>
                 </ul>
               </div>
 
@@ -556,17 +526,17 @@ export function generateSingleHtmlPresentation(): string {
                     DEZEMBRO
                   </span>
                   <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                    4 Reels
+                    2 Reels
                   </span>
                 </div>
                 <div class="text-xs font-bold text-amber-200">
                   Festas de Fim de Ano & Natal
                 </div>
                 <ul class="space-y-1.5 text-[11px] text-amber-100/90">
-                  <li class="leading-snug">• Ceia de Natal completa e econômica</li>
-                  <li class="leading-snug">• Carnes, panetones e bebidas festivas</li>
-                  <li class="leading-snug">• Preparativos para a virada de ano</li>
-                  <li class="leading-snug">• Retrospectiva de economia no Assaí</li>
+                  <li class="leading-snug">• Visita especial para cobertura de compras de Natal</li>
+                  <li class="leading-snug">• 2 Reels temáticos com ceia completa e econômica</li>
+                  <li class="leading-snug">• Combo de Stories de encerramento de ano</li>
+                  <li class="leading-snug">• Carnes, panetones e bebidas festivas Assaí</li>
                 </ul>
               </div>
             </div>
@@ -583,13 +553,13 @@ export function generateSingleHtmlPresentation(): string {
                   RESUMO DA RECOMENDAÇÃO PARA O ASSAÍ ATACADISTA
                 </h4>
                 <p class="text-xs text-slate-300">
-                  Fechamento sugerido: <strong class="text-amber-400 font-bold">R$ 6.800/mês</strong> <span class="text-slate-400">(R$ 27.200 no total de 4 meses por 16 Reels).</span>
+                  Fechamento sugerido: <strong class="text-amber-400 font-bold">R$ 6.800,00/mês</strong> <span class="text-slate-400">(Total 3 Meses: R$ 20.400,00 - 6 Reels em OUT • NOV • DEZ).</span>
                 </p>
               </div>
             </div>
 
             <div class="self-stretch sm:self-auto flex items-center justify-center px-4 py-2 bg-slate-950 text-slate-200 border border-slate-700 rounded-xl text-xs font-semibold whitespace-nowrap shadow-sm">
-              Excelente ROI para 330k de Audiência
+              Excelente ROI para 360k de Audiência
             </div>
           </div>
         </div>

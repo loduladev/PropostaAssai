@@ -105,7 +105,7 @@ export const PdfExportModal: React.FC<PdfExportModalProps> = ({
             </p>
             <a
               href={progress.blobUrl}
-              download="Apresentacao-Joao-Paulo-Cordoba-Media-Kit-330k.pdf"
+              download="Apresentacao-Joao-Paulo-Cordoba-Media-Kit-360k.pdf"
               className="w-full py-3 px-4 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all cursor-pointer block text-center"
             >
               <Download className="w-4 h-4 inline" />
@@ -120,11 +120,11 @@ export const PdfExportModal: React.FC<PdfExportModalProps> = ({
                 Estrutura do Deck em 5 Slides:
               </div>
               <ul className="space-y-1 text-slate-400 text-[11px] pl-4 list-disc">
-                <li><strong className="text-slate-300">Slide 1:</strong> Capa Executiva & Diagnóstico @jpbcordoba (330k)</li>
+                <li><strong className="text-slate-300">Slide 1:</strong> Capa Executiva & Diagnóstico @jpbcordoba (360k)</li>
                 <li><strong className="text-slate-300">Slide 2:</strong> Inserção de Marca, 19.4M Impressões & Alcance Regional</li>
                 <li><strong className="text-slate-300">Slide 3:</strong> Comparativo Feed (45.8k views) vs Stories (9.2k views)</li>
                 <li><strong className="text-slate-300">Slide 4:</strong> Conclusões Estratégicas & Pilares Comerciais</li>
-                <li><strong className="text-slate-300">Slide 5:</strong> Proposta Assaí (R$ 6.800/mês - 16 Reels) & Cronograma</li>
+                <li><strong className="text-slate-300">Slide 5:</strong> Proposta Assaí (R$ 6.800/mês • Total R$ 20.400 - 6 Reels) & Cronograma</li>
               </ul>
             </div>
 

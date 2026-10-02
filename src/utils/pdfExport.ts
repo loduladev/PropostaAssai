@@ -94,7 +94,7 @@ export async function exportPresentationToPdf(
     }
 
     const pdfBlob = pdf.output('blob');
-    const filename = 'Apresentacao-Joao-Paulo-Cordoba-Media-Kit-330k.pdf';
+    const filename = 'Apresentacao-Joao-Paulo-Cordoba-Media-Kit-360k.pdf';
 
     // Trigger download via Blob URL
     const blobUrl = URL.createObjectURL(pdfBlob);
